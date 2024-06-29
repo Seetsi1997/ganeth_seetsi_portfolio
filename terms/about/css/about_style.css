@@ -1,0 +1,85 @@
+/* ==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+ /*==================== END GOOGLE FONTS    ==============*/
+
+*{
+    margin: 1px;
+    padding: 4px;
+    text-decoration: none; 
+    list-style: none;
+    box-sizing: border-box;
+ } 
+  body{
+    margin: 0 0 3rem 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b); 
+    color: white;
+  } 
+
+  .main {
+    padding: 0 1rem;
+  }
+  .version__header {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+ }
+  .version__header {
+  flex-direction: column;
+  align-items: center;
+ }
+ .version__img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right:  0.75rem;;
+ }
+  section {
+    padding: 0.5rem 0 0.5rem;
+    margin-bottom: 20px;
+  }
+  .section__title {
+    font-size: 1.5rem;
+  }
+  
+  .section__subtitle {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: -1rem;
+  }
+  
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  }
+
+  .footer__copy, #year{
+      font-size: 0.75rem;
+      text-align: center;
+      margin-top: 12.5rem;
+      text-decoration: none;
+      color:  #f7f7f7;
+    }
+ 
+  @media screen and (min-width: 1024px) {
+      body {
+        margin: 0;
+      }
+      .main,
+      .footer__copy, #year {
+        padding: 0;
+      }
+    }
+    @media screen and (min-width: 270px) {
+      .main,
+      .footer__copy, #year {
+        padding: 0;
+      }
+      .footer__copy {
+        margin-top: 17.5rem;
+      }
+      .footer__copy {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
