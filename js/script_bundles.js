@@ -1,8 +1,8 @@
 // Like or Dislike Button
  // Get references to the button and like count elements
- document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
    // const commentElements = document.querySelectorAll('.comment');
-    const projectElements = document.querySelectorAll('.project');
+    //const projectElements = document.querySelectorAll('.project');
   
   // commentElements.forEach((comment) => {
      // const likeButton = comment.querySelector('.like-button');
@@ -30,31 +30,31 @@
      // });
    // });
     
-    projectElements.forEach((project) => {
-    const likeButton = project.querySelector('.like-button');
-      const likeCount = project.querySelector('.like-count');
+  //  projectElements.forEach((project) => {
+    //const likeButton = project.querySelector('.like-button');
+      //const likeCount = project.querySelector('.like-count');
      // Initialize like status from local storage or default to false (not liked)
      // Initialize like count from local storage or default to 0
-    let liked = JSON.parse(localStorage.getItem(`liked_${project.dataset.projectId}`)) || false;
-     let count = parseInt(localStorage.getItem(`likes_${project.dataset.projectId}`)) || 0;
+    //let liked = JSON.parse(localStorage.getItem(`liked_${project.dataset.projectId}`)) || false;
+     //let count = parseInt(localStorage.getItem(`likes_${project.dataset.projectId}`)) || 0;
   
-      likeCount.textContent = count;
+      //likeCount.textContent = count;
   
      // Event listener for the like button
-     likeButton.addEventListener('click', () => {
+    // likeButton.addEventListener('click', () => {
       // Toggle the liked state
-      liked = !liked;
+      //liked = !liked;
       // Increment or decrement the count
-      count = liked ? count + 1 : count - 1;
+      //count = liked ? count + 1 : count - 1;
   
-     likeCount.textContent = count;
+     //likeCount.textContent = count;
   
      // Storage the updated count and liked status in local storage 
-        localStorage.setItem(`likes_${project.dataset.projectId}`, count);
-        localStorage.setItem(`liked_${project.dataset.projectId}`, JSON.stringify(liked));
-      });
-  });
-  });
+        //localStorage.setItem(`likes_${project.dataset.projectId}`, count);
+        //localStorage.setItem(`liked_${project.dataset.projectId}`, JSON.stringify(liked));
+      //});
+ /// });
+  //});
 
   function join(date, options, separator) {
     function format(option) {
