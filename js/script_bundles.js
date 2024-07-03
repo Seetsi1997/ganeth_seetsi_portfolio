@@ -116,7 +116,7 @@
     const endDate = new Date(project.endDate);
     
     startDateElement.innerText = `${ formatDateTime = startDate.toLocaleDateString()}`;
-    endDateElement.innerText = `${endDate.toLocaleDateString()} ${ formatDateTime = endDate.toLocaleTimeString()}`;
+    endDateElement.innerText = `${endDate.toLocaleDateString()} ${ formatDateTime = endDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}`;
 
   }); 
 }
