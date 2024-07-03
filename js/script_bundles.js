@@ -81,16 +81,16 @@
       endDate: "2024-02-19T01:25"
     }, 
     {
-        startDate: "2024-04-27 ".toUpperCase(), 
-        endDate: "2024-05-12T21:45".toUpperCase()
+        startDate: "2024-04-27 ", 
+        endDate: "2024-05-12T21:45" 
     },
     {
-      startDate: "2024-05-20".toUpperCase(),
-      endDate: "2024-06-08T18:00".toUpperCase()
+      startDate: "2024-05-20",
+      endDate: "2024-06-08T18:00"
     },
     {
-      startDate: "2023-12-29".toUpperCase(),
-      endDate: "2024-01-25T15:45".toUpperCase()
+      startDate: "2023-12-29",
+      endDate: "2024-01-25T15:45"
     }
 
     // Add more projects here
@@ -116,7 +116,7 @@
     const endDate = new Date(project.endDate);
     
     startDateElement.innerText = `${ formatDateTime = startDate.toLocaleDateString()}`;
-    endDateElement.innerText = `${endDate.toLocaleDateString()} ${ formatDateTime = endDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}`;
+    endDateElement.innerText = `${endDate.toLocaleDateString()} ${ formatDateTime = endDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true }).toUpperCase()}`;
 
   }); 
 }
