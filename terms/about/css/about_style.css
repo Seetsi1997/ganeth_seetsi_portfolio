@@ -3,18 +3,18 @@
  /*==================== END GOOGLE FONTS    ==============*/
 
 *{
-    margin: 1px;
-    padding: 4px;
-    text-decoration: none; 
-    list-style: none;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 7px;
+   list-style: none;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none; 
  } 
   body{
     margin: 0 0 3rem 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b); 
-    color: white;
+    font-size: 0.913rem;
+    background: linear-gradient(to right top, #1159d4, #111824,#0c1c35, #042047, #002459, #001b4b, #1159d4);  
+    color: #defbff;
   } 
 
   .main {
@@ -33,7 +33,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-right:  0.75rem;;
+  margin-right:  0.75rem;
+  cursor: pointer;
  }
   section {
     padding: 0.5rem 0 0.5rem;
@@ -55,31 +56,10 @@
   }
 
   .footer__copy, #year{
-      font-size: 0.75rem;
+      font-size: 0.813rem;
       text-align: center;
       margin-top: 12.5rem;
       text-decoration: none;
-      color:  #f7f7f7;
-    }
- 
-  @media screen and (min-width: 1024px) {
-      body {
-        margin: 0;
-      }
-      .main,
-      .footer__copy, #year {
-        padding: 0;
-      }
-    }
-    @media screen and (min-width: 270px) {
-      .main,
-      .footer__copy, #year {
-        padding: 0;
-      }
-      .footer__copy {
-        margin-top: 17.5rem;
-      }
-      .footer__copy {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      color:  #defbff;
+      cursor: pointer;
     }
