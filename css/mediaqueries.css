@@ -239,7 +239,7 @@
     .footer__bg {
       padding: 3rem 0 3.5rem;
     }
-    .footer .footer__bg .footer__container .footer__links li i{
+    .footer .footer__bg .footer__container .footer__links i{
        display: none;
     }
     .footer__links {
@@ -295,7 +295,7 @@
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
-.footer .footer__bg .footer__container .footer__links li i{
+.footer .footer__bg .footer__container .footer__links i{
   display: none;
 }
   .contact__form {
