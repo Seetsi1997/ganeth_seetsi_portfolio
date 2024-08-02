@@ -293,7 +293,9 @@
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
-
+.footer .footer__bg .footer__container .footer__links li a i{
+  display: none;
+}
   .contact__form {
     width: 460px;
   }
