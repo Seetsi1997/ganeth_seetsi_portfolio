@@ -936,6 +936,7 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+  resize: none;
 }
 
 /*==================== FOOTER ====================*/
@@ -968,7 +969,8 @@ img {
 }
 .footer__links{
   color: hsl(var(--hue-color), 12%, 90%);
-  font-size: smaller;
+  font-size: smaller
+  ;
 }
 .footer__link:hover {
   color: var(--first-color-lighter);
