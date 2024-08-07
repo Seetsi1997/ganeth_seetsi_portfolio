@@ -966,7 +966,10 @@ img {
   flex-direction: column;
   row-gap: 1.5rem;
 }
-
+.footer__links{
+  color: hsl(var(--hue-color), 12%, 90%);
+  font-size: smaller;
+}
 .footer__link:hover {
   color: var(--first-color-lighter);
 }
