@@ -93,7 +93,8 @@
       endDate: "2024-01-25T15:45"
     },
    {
-    startDate: "2024-07-21"
+    startDate: "2024-07-21",
+    endDate: "2024-00-00T00:00"
    }
     
     // Add more projects here
