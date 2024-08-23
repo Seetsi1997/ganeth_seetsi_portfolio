@@ -23,6 +23,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --color-clr: #cadcfc;
   /*==================== END HSL COLOR MODE   ====================*/
   /*==================== FONT AND  TYPOGRAPHY ===================*/
   --body-font: "Poppins", sans-serif;
@@ -476,14 +477,22 @@ img {
 }
 .modal-certificate .modal-certificates-content h2, 
 .modal-certificate .modal-certificates-content li{
-  color:#cadcfc; ;
+  color: var(--color-clr);
 }
-
+.modal-certificate .modal-certificates-content h2{
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.modal-certificate .modal-certificates-content li{
+  font-size: 13.5px;
+  font-weight: 500;
+}
 .close-certificates {
   position: absolute;
   top: 0;
   right: 20px;
-  color: var(--body-color);
+  color: var(--color-clr);
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
