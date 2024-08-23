@@ -37,7 +37,13 @@
   .home__button {
     font-size: 20px;
   }
-
+.about__img .home__blob {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    justify-self: center;
+  }
   .skills__title {
     font-size: var(--normal-font-size);
   }
