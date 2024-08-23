@@ -126,3 +126,15 @@
 }
    setInterval(datetimes, 1000);
    datetimes();
+
+// Function to open the popup
+function openPopupCertificates() {
+  document.getElementById("modal-certificates").style.display = "inline";
+}
+
+// Function to close the popup
+function closePopupCertificates() {
+  document.getElementById("modal-certificates").style.display = "none";
+}
+
+
