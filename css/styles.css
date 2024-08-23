@@ -450,7 +450,44 @@ img {
   display: flex;
   justify-content: center;
 }
+.about__info .about__info__certificates .about__info-name{
+  cursor: pointer;
+}
+.modal-certificate {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 150px;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background: rgba(0,0,0,0.4); 
+  z-index: 1; 
+  cursor: pointer;
+}
+.modal-certificates-content {
+    background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
+    margin: 15% auto; 
+    padding: 20px;
+    width: 80%; 
+    height: auto; 
+    max-width: 600px;
+    position: relative;
+}
+.modal-certificate .modal-certificates-content h2, 
+.modal-certificate .modal-certificates-content li{
+  color:#cadcfc; ;
+}
 
+.close-certificates {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: var(--body-color);
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
 /*==================== SKILLS ====================*/
 
 .skills__container {
