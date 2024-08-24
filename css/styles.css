@@ -497,6 +497,14 @@ img {
   font-weight: 300;
   cursor: pointer;
 }
+.modal-certificates  .modal-certificates-content .close-certificates .services__modal-close {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
 /*==================== SKILLS ====================*/
 
 .skills__container {
