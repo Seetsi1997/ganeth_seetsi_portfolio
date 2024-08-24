@@ -475,18 +475,16 @@ img {
     max-width: 600px;
     position: relative;
 }
-.modal-certificate .modal-certificates-content h2, 
-.modal-certificate .modal-certificates-content li{
-  color: var(--color-clr);
-}
 .modal-certificate .modal-certificates-content h2{
   font-size: 20px;
   font-weight: 800;
   text-align: center;
+  color: var(--container-color);
 }
 .modal-certificate .modal-certificates-content li{
   font-size: 13.5px;
   font-weight: 500;
+  color: var(--color-clr);
 }
 .close-certificates .services__modal-close{
   position: absolute;
@@ -495,6 +493,7 @@ img {
   color: var(--color-clr);
   font-size: 18px;
   font-weight: 300;
+  cursor: pointer;
   cursor: pointer;
 }
 .modal-certificate .modal-certificates-content .services__modal-icon{
