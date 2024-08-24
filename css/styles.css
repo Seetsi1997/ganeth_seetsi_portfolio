@@ -488,23 +488,20 @@ img {
   font-size: 13.5px;
   font-weight: 500;
 }
-.close-certificates {
+.close-certificates .services__modal-close{
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 3px;
+  right: 10px;
   color: var(--color-clr);
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
 }
-.modal-certificates  .modal-certificates-content .close-certificates i {
-  position: absolute;
-  bottom: 3rem;
-  right: 1rem;
-  font-size: 0.5rem;
-  color: var(--first-color);
-  cursor: pointer;
+.modal-certificate .modal-certificates-content .services__modal-icon{
+  color: var(--color-clr);
+  font-size: 1.1rem;
 }
+
 /*==================== SKILLS ====================*/
 
 .skills__container {
