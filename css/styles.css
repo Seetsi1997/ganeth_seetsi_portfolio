@@ -497,11 +497,11 @@ img {
   font-weight: 300;
   cursor: pointer;
 }
-.modal-certificates  .modal-certificates-content .close-certificates .services__modal-close {
+.modal-certificates  .modal-certificates-content .close-certificates i {
   position: absolute;
-  bottom: 1rem;
+  bottom: 3rem;
   right: 1rem;
-  font-size: 1rem;
+  font-size: 0.5rem;
   color: var(--first-color);
   cursor: pointer;
 }
