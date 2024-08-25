@@ -46,7 +46,7 @@
 
   }
   .modal-certificate {
-    top: 100px;
+    top: 305px;
     left: 0;
     right: 0;
     bottom: 0; 
@@ -308,7 +308,7 @@
     transform: translateX(-6rem);
   }
   .modal-certificate {
-    top: 15px;
+    top: 210px;
     left: 0;
     right: 0;
     bottom: 0; 
