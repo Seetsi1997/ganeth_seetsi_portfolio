@@ -37,6 +37,20 @@
   .home__button {
     font-size: 20px;
   }
+  .about__img .home__blob {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    justify-self: center;
+
+  }
+  .modal-certificate {
+    top: 305px;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+  }
 
   .skills__title {
     font-size: var(--normal-font-size);
@@ -99,6 +113,20 @@
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__img .home__blob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+
+  }
+  .modal-certificate {
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0; 
   }
 
   .qualification__sections {
@@ -177,6 +205,7 @@
     }
     .about__img {
       width: 350px;
+     
     }
     .about__description {
       text-align: initial;
@@ -187,6 +216,12 @@
     .about__buttons {
       justify-content: initial;
     }
+    .modal-certificate {
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0; 
+    }  
     .qualification__tabs {
       justify-content: center;
     }
@@ -224,7 +259,7 @@
       background: none;
     }
     .project__container {
-      background-color: var(--first-color-second);
+      background: var(--first-color-second);
       border-radius: 1rem;
       padding: 3rem 2.5rem 0;
       grid-template-columns: 1fr max-content;
@@ -271,6 +306,12 @@
   }
   .home__social {
     transform: translateX(-6rem);
+  }
+  .modal-certificate {
+    top: 210px;
+    left: 0;
+    right: 0;
+    bottom: 0; 
   }
   .services__container {
     grid-template-columns: repeat(3, 238px);

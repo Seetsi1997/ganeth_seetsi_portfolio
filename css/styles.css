@@ -23,6 +23,9 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --color-clr: #cadcfc;
+  --color-second: #0d4bad;
+  --color-first: #12343b;
   /*==================== END HSL COLOR MODE   ====================*/
   /*==================== FONT AND  TYPOGRAPHY ===================*/
   --body-font: "Poppins", sans-serif;
@@ -81,13 +84,42 @@ body.dark-theme {
 
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--color-second);
   margin-right: var(--mb-1);
   cursor: pointer;
 }
-
-.change-theme:hover {
-  color: var(--first-color);
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-first);
+  z-index: 200;
+  text-align: center;
+  line-height: 90vh;
+}
+.splash.display-none{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-c);
+  z-index: -10;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.fade__in{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 /*==================== END BUTTON DARK/LIGHT ====================*/
 /*==================== BASE                  ===================*/
@@ -106,7 +138,7 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background: var(--body-color);
   color: var(--text-color);
 }
 
@@ -185,21 +217,13 @@ img {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
+  color: var(--color-second);
   font-weight: var(--font-medium);
-}
-
-.nav__logo:hover {
-  color: var(--first-color);
 }
 
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
-}
-
-.nav__toggle:hover {
-  color: var(--first-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -208,7 +232,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background: var(--first-color-second);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
@@ -225,12 +249,8 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--text-color-light);
   font-weight: var(--font-medium);
-}
-
-.nav__link:hover {
-  color: var(--first-color);
 }
 
 .nav__icon {
@@ -243,11 +263,7 @@ img {
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
-}
-
-.nav__close:hover {
-  color: var(--first-color-alt);
+  color: var(--color-clr);
 }
 
 /* show menu */
@@ -353,9 +369,7 @@ img {
 .button, .like-button {
   display: inline-block;
   background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
-  color: #fff;
- /* background-color: var(--first-color);
-  color: #ffff; */
+  color: var(--color-clr);
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
@@ -372,7 +386,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background: var(--first-color-alt);
 }
 
 .button__icon {
@@ -383,11 +397,11 @@ img {
 
 .button--white {
   background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
-  color: #fff;
+  color: var(--color-clr);
 }
 
 .button--white:hover {
-  background-color: #ffffff;
+  background: var(--first-color-alt);
 }
 
 .button--flex {
@@ -402,12 +416,12 @@ img {
 
 .button--link {
   padding: 0;
-  background-color: transparent;
+  background: transparent;
   color: var(--first-color);
 }
 
 .button--link:hover {
-  background-color: transparent;
+  background: transparent;
   color: var(--first-color-alt);
 }
 
@@ -450,6 +464,60 @@ img {
   display: flex;
   justify-content: center;
 }
+.about__info .about__info__certificates .about__info-name{
+  cursor: pointer;
+}
+.modal-certificate {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modal-certificates-content {
+    background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
+    margin: 15% auto; 
+    padding: 20px;
+    width: 80%; 
+    height: auto; 
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px;
+}
+.modal-certificate .modal-certificates-content h2{
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+}
+.modal-certificate .modal-certificates-content li{
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-clr);
+}
+.close-certificates .services__modal-close{
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: var(--color-clr);
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.modal-certificate .modal-certificates-content .services__modal-icon{
+  color: var(--color-clr);
+  font-size: 18px;
+}
 
 /*==================== SKILLS ====================*/
 
@@ -471,7 +539,7 @@ img {
 }
 .skills__icon:hover,
 .skills__arrow:hover {
-  color: var(--first-color);
+  color: var(--color-clr);
 }
 .skills__icon {
   margin-right: var(--mb-0-75);
@@ -595,11 +663,11 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--color-first);
 }
 
 .qualification__button:hover {
-  color: var(--first-color);
+  color: var(--text-color-light);
 }
 
 .qualification__icon {
@@ -634,7 +702,7 @@ img {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: var(--first-color-second);
+  background: var(--color-second);
   border-radius: 50%;
 }
 
@@ -642,7 +710,7 @@ img {
   display: block;
   width: 1px;
   height: 100%;
-  background: var(--first-color-second);
+  background: var(--color-second);
   transform: translate(6px, -7px);
 }
 
@@ -655,7 +723,7 @@ img {
 }
 
 .qualification__button.qualification__active {
-  color: var(--first-color);
+  color: var(--color-second);
 }
 
 /*==================== SERVICES ====================*/
@@ -666,7 +734,7 @@ img {
 
 .services__content {
   position: relative;
-  background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b)  /*var(--container-color)*/;
+  background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -688,12 +756,13 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
-  color: #fff;
+  color: var(--color-clr);
 }
 
 .services__button {
   cursor: pointer;
   font-size: var(--small-font-size);
+  color: var(--color-clr);
 }
 
 .services__button:hover, .button__icon{
@@ -706,7 +775,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -719,7 +788,7 @@ img {
 
 .services__modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background: var(--first-color-second);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -736,6 +805,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+  color: var(--text-color-light);
 }
 
 .services__modal-close {
@@ -743,15 +813,17 @@ img {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--color-clr);
   cursor: pointer;
 }
 
 .services__modal-icon {
-  color: var(--first-color);
+  color: var(--color-clr);
   margin-right: var(--mb-0-25);
 }
-
+.services__modal-services .services__modal-service{
+  color: var(--color-clr);
+}
 /* Active Modal */
 .active-modal {
   opacity: 1;
@@ -796,7 +868,7 @@ img {
 
 .swiper-portfolio-icon {
   font-size: 2rem;
-  color: var(--first-color);
+  color: var(--color-second);
 }
 
 .swiper-button-prev {
@@ -812,7 +884,7 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--first-color);
+  background: var(--first-color);
 }
 
 .swiper-button-prev,
@@ -831,15 +903,12 @@ img {
 .project__title {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
+  color: var(--text-color-light);
 }
 
 .project__description {
   margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
-  color: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
+  color: var(--text-color-light);
 }
 
 .project__img {
@@ -917,7 +986,7 @@ img {
 }
 
 .contact__content {
-  background-color: var(--input-color);
+  background: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
 }
@@ -929,7 +998,7 @@ img {
 
 .contact__input {
   width: 100%;
-  background-color: var(--input-color);
+  background: var(--input-color);
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -996,7 +1065,7 @@ img {
 .footer__subtitle,
 .footer__link,
 .footer__social {
-  color: #fff;
+  color: var(--color-clr);
 }
 
 /*========== SCROLL UP ==========*/
@@ -1004,7 +1073,7 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background: var(--color-first);
   opacity: 0.8;
   padding: 0 0.3rem;
   border-radius: 0.4rem;
@@ -1013,7 +1082,7 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  color: var(--color-second);
 }
 
 .scrollup__icon {
@@ -1029,16 +1098,15 @@ img {
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: var(--scroll-bar-color);
+  background: var(--scroll-bar-color);
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
+  background: var(--scroll-thumb-color);
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-color-light);
+  background: var(--text-color-light);
 }
-

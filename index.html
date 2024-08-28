@@ -17,6 +17,9 @@
         <title>Ganeth Seetsi</title>
     </head>
     <body>
+        <div class="splash">
+            <h1 class="fade__in">Hello</h1>
+        </div>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -77,7 +80,6 @@
                 </div>
             </nav>
         </header>
-
         <!--==================== MAIN       ====================-->
         <main class="main">
             <!--==================== HOME   ====================-->
@@ -173,14 +175,25 @@
                                 <span class="about__info-title">0-1+</span>
                                 <span class="about__info-name">Companies<br>Worked</span>
                             </div>
-                            <div>
-                                <span class="about__info-title">0+</span>
+                            <div class="about__info__certificates" onclick="openPopupCertificates()">
+                                <span class="about__info-title">1+</span>
                                 <span class="about__info-name">Completed<br>Certificate</span>
                             </div>
+                            <div id="modal-certificates" class="modal-certificate">
+                                <div class="modal-certificates-content">
+                                    <span class="close-certificates" onclick="closePopupCertificates()"><i class="uil uil-times-circle services__modal-close"></i></span>
+                                    <h2>My Certificates</h2>
+                                    <ul>
+                                       <li>
+                                           <i class="uil uil-check-square services__modal-icon"></i>
+                                            Microsoft Certified: Azure Fundamentals
+                                       </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
                         <div class="about__buttons">
-                            <a download="" href="assets/cv's/Ganethcv.pdf" class="button button--flex">
+                            <a download="" href="assets/cv's/Ganecv.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -387,7 +400,7 @@
                      <span class="qualification__subtitle">Matriculated with Bachelors Certificate, Commerce Subject Curriculum, Business Studies, Economics..etc.</span>
                      <div class="qualification__calendar">
                         <i class="uil uil-calendar-alt"></i>
-                        2015 - 2017
+                       Jan 2015 - Nov 2017
                      </div>
                  </div>
 
@@ -410,7 +423,7 @@
                     <span class="qualification__subtitle">National Certificate(IT: Technical Support NQF Level 4), Major in CompTIA A+ | N+.</span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2018 - 2019
+                      Feb 2018 - Jan 2019
                     </div>
                 </div>
             </div> 
@@ -422,7 +435,7 @@
                     <span class="qualification__subtitle">Diploma  in Information Technology, Major in Database, Software Development, Technical Programming. </span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2019 - 2021
+                       Jan 2019 - Nov 2021
                     </div>
                 </div>
 
@@ -442,10 +455,10 @@
 
                 <div>    
                     <h3 class="qualification__title">Dynamic DNA</h3>
-                    <span class="qualification__subtitle">Microsoft Azure Certificate(AZ-900 & AZ-204)</span>
+                    <span class="qualification__subtitle">Microsoft Azure Certification(AZ-900 & AZ-204 & PL-300))</span>
                     <div class="qualification__calendar">
                        <i class="uil uil-calendar-alt"></i>
-                       2024 Present
+                      Aug 2024 - Present
                     </div>
                 </div>
             </div> 
@@ -724,10 +737,32 @@
                             <span class="like-count">0</span>
                     </a>-->
                 </div>
-               
             </div>
-             
               <!--==================== END PROJECT 4 ====================-->
+              <!--==================== PROJECT 5     ====================-->
+             <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/images/" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Vent E-Learning App</h3>
+                    <span class="small__description" id="start-date-5" ></span> <span class=" small__description" id="end-date-5" ></span>
+                   </br>
+                   </br>
+                    <p class="portfolio__description">Coming Soon
+                    </p>
+                    <a href="https://github.com/Seetsi1997/" class="button button--flex button--small portfolio__button">
+                        Demo
+                    </a>
+                    <a href="https://github.com/seetsi1997" class="button button--flex button--small portfolio__button">
+                        Github
+                    </a>
+                   <!--<a class="project" data-project-id="4"  >
+                            <button class="like-button button  button--flex button--small portfolio__button   ">Like</button>
+                            <span class="like-count">0</span>
+                    </a>-->
+                </div>
+            </div>
+              <!--==================== END PROJECT 4 ====================--> 
              
          </div>
 
@@ -1031,7 +1066,6 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-
     <!--==================== SWIPER JS ====================-->
     <script src="./js/swiper-bundle.min.js"></script>
      <script src="./js/script_bundles.js"></script>
