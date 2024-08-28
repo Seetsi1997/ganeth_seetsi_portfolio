@@ -1,3 +1,82 @@
+/* ==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+ /*==================== END GOOGLE FONTS    ==============*/
+/*==================== VARIABLES CSS        =============*/
+:root {
+  --header-height: 3rem;
+  /*======================== END VARIABLES CSS            ==============*/
+  /*======================== COLORS  ==================================*/
+  /*======================== CHANGE FAVORITE COLOR ===================*/
+  --hue-color: 1997; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  /*======================== END CHANGE FAVORITE COLOR ==============*/
+  /*======================== HSL COLOR MODE            =============*/
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+ /* --first-color-second: hsl(var(--hue-color), 69%, 61%);*/
+  --first-color-second: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 87%, 75%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), -60%, 90%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --color-clr: #cadcfc;
+  --color-second: #0d4bad;
+  --color-first: #12343b;
+  /*==================== END HSL COLOR MODE   ====================*/
+  /*==================== FONT AND  TYPOGRAPHY ===================*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --smaller-font-sizer: 0.69rem;
+ /*=================== END FONT AND  TYPOGRAPHY ==============*/  
+  /*================== FONT WEIGHT              =============*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*================== FONT WEIGHT     ====================*/
+  /*================== MARGENES BOTTOM ===================*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+   /*==================== MARGENES BOTTOM ====================*/
+  /*===================== Z INDEX         ===================*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+/*======================= END Z INDEX                     =======================*/
+
+/*==================== Variables Dark theme            ===================*/
+body.dark-theme {
+  /*  HSL color mode */
+  --first-color-second: linear-gradient(to right top, #452d4b00,#4b7274, #4b7274, #4b7274, #505968);
+  --title-color: hsl(var(--hue-color), 8%, 95%, 75%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 9%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+/*==================== END VARIABLES DARK THEME ====================*/
+/*==================== Button Dark/Light        ===================*/
 .nav__btns {
   display: flex;
   align-items: center;
@@ -9,7 +88,7 @@
   margin-right: var(--mb-1);
   cursor: pointer;
 }
-/*.splash{
+.splash{
   position: fixed;
   top: 0;
   left: 0;
@@ -27,11 +106,11 @@
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-clr);
+  background: var(--color-c);
   z-index: -10;
   text-align: center;
   line-height: 90vh;
-}*/
+}
 @keyframes fadeIn{
   to{
     opacity: 1;
