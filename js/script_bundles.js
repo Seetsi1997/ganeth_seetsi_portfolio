@@ -91,8 +91,12 @@
     {
       startDate: "2023-12-29",
       endDate: "2024-01-25T15:45"
-    }
-
+    },
+   {
+    startDate: "2024-07-21",
+    endDate: "2024-00-00T00:00"
+   }
+    
     // Add more projects here
   ];
 
@@ -122,3 +126,15 @@
 }
    setInterval(datetimes, 1000);
    datetimes();
+
+// Function to open the popup
+function openPopupCertificates() {
+  document.getElementById("modal-certificates").style.display = "inline";
+}
+
+// Function to close the popup
+function closePopupCertificates() {
+  document.getElementById("modal-certificates").style.display = "none";
+}
+
+
