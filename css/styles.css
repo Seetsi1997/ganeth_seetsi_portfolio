@@ -469,7 +469,7 @@ img {
   font-size: 20px;
   font-weight: 800;
   text-align: center;
-  color: #fff;
+  color: var(--color-clr);
 }
 .modal-certificate .modal-certificates-content li{
   font-size: 13.5px;
