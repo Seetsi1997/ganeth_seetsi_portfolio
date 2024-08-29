@@ -466,10 +466,10 @@ img {
     border-radius: 10px;
 }
 .modal-certificate .modal-certificates-content h2{
-  font-size: 20px;
-  font-weight: 800;
-  text-align: center;
-  color: var(--color-clr);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+  color: var(--text-color-light);
 }
 .modal-certificate .modal-certificates-content li{
   font-size: 13.5px;
