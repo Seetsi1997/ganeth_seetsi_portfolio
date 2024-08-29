@@ -759,7 +759,8 @@ img {
 
 .services__modal-content {
   position: relative;
-  background: var(--first-color-second);
+  background: /*var(--first-color-second)*/linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
+    margin: 15% auto; 
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
