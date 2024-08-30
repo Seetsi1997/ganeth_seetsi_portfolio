@@ -164,17 +164,49 @@
                                 <span class="about__info-title">0-1+</span>
                                 <span class="about__info-name">Years<br> Experience</span>
                             </div>
-                            <div>
+                           <div id="modal-projects" class="modal-projects">
+                                <div class="modal-projects-content">
+                                    <span class="close-projects-popup" onclick="closePopupProjects()"><i class="uil uil-times-circle services__modal-close"></i></span>
+                                    <h2>Projects Completed</h2>
+                                    <ul>
+                                       <li>
+                                           <i class="uil uil-check-square services__modal-icon"></i>
+                                            Calculate App {HTML | CSS | JavaScript}
+                                       </li>
+                                       <li>
+                                          <i class="uil uil-check-square services__modal-icon"></i>
+                                           Notes App {HTML | CSS | JavaScript}
+                                        </li>
+                                        <li>
+                                            <i class="uil uil-check-square services__modal-icon"></i>
+                                             Weather App {HTML | CSS | JavaScript}
+                                        </li>
+                                        <li>
+                                            <i class="uil uil-check-square services__modal-icon"></i>
+                                             Todo App {Flutter | Backendless}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="about__info__projects" onclick="openPopupProjects()" >
                                 <span class="about__info-title">4+</span>
                                 <span class="about__info-name">Completed <br> Projects</span>
                             </div>
-                            <div>
-                                <span class="about__info-title">0-1+</span>
-                                <span class="about__info-name">Companies<br>Worked</span>
+                            <div id="modal-worked-companies" class="modal-worked-companies">
+                                <div class="modal-worked-content">
+                                    <span class="close-worked-popup-companies" onclick="closePopupCompanies()"><i class="uil uil-times-circle services__modal-close"></i></span>
+                                    <h2>Campanies I Worked For</h2>
+                                    <ul>
+                                       <li>
+                                           <i class="uil uil-check-square services__modal-icon"></i>
+                                            Olehile Investment (PTY) LTD
+                                       </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="about__info__certificates" onclick="openPopupCertificates()">
+                            <div class="about__info__companies" onclick="openPopupCompanies()">
                                 <span class="about__info-title">1+</span>
-                                <span class="about__info-name">Completed<br>Certificate</span>
+                                <span class="about__info-name">Companies<br>Worked</span>
                             </div>
                             <div id="modal-certificates" class="modal-certificate">
                                 <div class="modal-certificates-content">
@@ -187,6 +219,10 @@
                                        </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="about__info__certificates" onclick="openPopupCertificates()">
+                                <span class="about__info-title">1+</span>
+                                <span class="about__info-name">Completed<br>Certificate</span>
                             </div>
                         </div>
                         <div class="about__buttons">
