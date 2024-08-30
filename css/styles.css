@@ -435,15 +435,16 @@ img {
   display: flex;
   justify-content: center;
 }
-
 .about__info .about__info__certificates .about__info-name, 
 .about__info .about__info__companies .about__info-name, 
-.about__info .about__info__projects .about__info-name {
+.about__info .about__info__projects .about__info-name,
+.about__info .about__info__expirience .about__info-name {
   cursor: pointer;
 }
 .modal-certificate,
 .modal-worked-companies,
-.modal-projects {
+.modal-projects,
+.modal-expirience {
   display: none; 
   position: fixed; 
   top: 0;
@@ -462,7 +463,8 @@ img {
 }
 .modal-certificates-content,
 .modal-worked-content, 
-.modal-projects-content {
+.modal-projects-content,
+.modal-expirience-content {
     background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
     margin: 15% auto; 
     padding: 20px;
@@ -474,7 +476,8 @@ img {
 }
 .modal-certificate .modal-certificates-content h2,
 .modal-worked-companies .modal-worked-content h2,
-.modal-projects .modal-projects-content h2{
+.modal-projects .modal-projects-content h2,
+.modal-expirience .modal-expirience-content h2{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
@@ -482,7 +485,8 @@ img {
 }
 .modal-certificate .modal-certificates-content li, 
 .modal-worked-companies .modal-worked-content li,
-.modal-projects .modal-projects-content li{
+.modal-projects .modal-projects-content li,
+.modal-expirience .modal-expirience-content li{
   font-size: 13.5px;
   font-weight: 500;
   color: var(--color-clr);
@@ -492,7 +496,8 @@ img {
 }
 .close-certificates .services__modal-close, 
 .close-worked-popup-companies  .services__modal-close,
-.close-projects-popup .services__modal-close{
+.close-projects-popup .services__modal-close,
+.close-expirience-popup .services__modal-close{
   position: absolute;
   top: 3px;
   right: 10px;
@@ -503,10 +508,12 @@ img {
 }
 .modal-certificate .modal-certificates-content .services__modal-icon,
 .modal-worked-companies .modal-worked-content .services__modal-icon,
-.modal-projects .modal-projects-content .services__modal-icon{
+.modal-projects .modal-projects-content .services__modal-icon,
+.modal-expirience .modal-expirience-content .services__modal-icon{
   color: var(--color-clr);
   font-size: 18px;
 }
+
 /*==================== SKILLS ====================*/
 
 .skills__container {
@@ -776,8 +783,7 @@ img {
 
 .services__modal-content {
   position: relative;
-  background: /*var(--first-color-second)*/linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
-    margin: 15% auto; 
+  background: var(--first-color-second);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
