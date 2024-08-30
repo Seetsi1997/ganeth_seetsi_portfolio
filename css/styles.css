@@ -435,10 +435,15 @@ img {
   display: flex;
   justify-content: center;
 }
-.about__info .about__info__certificates .about__info-name{
+
+.about__info .about__info__certificates .about__info-name, 
+.about__info .about__info__companies .about__info-name, 
+.about__info .about__info__projects .about__info-name {
   cursor: pointer;
 }
-.modal-certificate {
+.modal-certificate,
+.modal-worked-companies,
+.modal-projects {
   display: none; 
   position: fixed; 
   top: 0;
@@ -455,7 +460,9 @@ img {
   transition: 0.3s;
   cursor: pointer;
 }
-.modal-certificates-content {
+.modal-certificates-content,
+.modal-worked-content, 
+.modal-projects-content {
     background: linear-gradient(to right top, #111824,#0c1c35, #042047, #002459, #001b4b);
     margin: 15% auto; 
     padding: 20px;
@@ -465,18 +472,27 @@ img {
     position: relative;
     border-radius: 10px;
 }
-.modal-certificate .modal-certificates-content h2{
+.modal-certificate .modal-certificates-content h2,
+.modal-worked-companies .modal-worked-content h2,
+.modal-projects .modal-projects-content h2{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
   color: var(--text-color-light);
 }
-.modal-certificate .modal-certificates-content li{
+.modal-certificate .modal-certificates-content li, 
+.modal-worked-companies .modal-worked-content li,
+.modal-projects .modal-projects-content li{
   font-size: 13.5px;
   font-weight: 500;
   color: var(--color-clr);
+  list-style: decimal;
+  margin: 0;
+  padding: 2.5px 0 0 0;
 }
-.close-certificates .services__modal-close{
+.close-certificates .services__modal-close, 
+.close-worked-popup-companies  .services__modal-close,
+.close-projects-popup .services__modal-close{
   position: absolute;
   top: 3px;
   right: 10px;
@@ -485,11 +501,12 @@ img {
   font-weight: 300;
   cursor: pointer;
 }
-.modal-certificate .modal-certificates-content .services__modal-icon{
+.modal-certificate .modal-certificates-content .services__modal-icon,
+.modal-worked-companies .modal-worked-content .services__modal-icon,
+.modal-projects .modal-projects-content .services__modal-icon{
   color: var(--color-clr);
   font-size: 18px;
 }
-
 /*==================== SKILLS ====================*/
 
 .skills__container {
