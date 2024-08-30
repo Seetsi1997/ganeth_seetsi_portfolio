@@ -196,14 +196,32 @@ themeButton.addEventListener("click", () => {
   
 });
 
-// Function to open the popup
-function openPopupCertificates() {
-  document.getElementById("modal-certificates").style.display = "inline";
+// General function to handle popups
+function handlePopup(elementId, action) {
+  const displayStyle = action === 'open' ? 'inline' : 'none';
+  document.getElementById(elementId).style.display = displayStyle;
 }
 
-// Function to close the popup
+// Functions to open popups
+function openPopupCertificates() {
+  handlePopup('modal-certificates', 'open');
+}
+function openPopupCompanies() {
+  handlePopup('modal-worked-companies', 'open');
+}
+function openPopupProjects() {
+  handlePopup('modal-projects', 'open');
+}
+
+// Functions to close popups
 function closePopupCertificates() {
-  document.getElementById("modal-certificates").style.display = "none";
+  handlePopup('modal-certificates', 'close');
+}
+function closePopupCompanies() {
+  handlePopup('modal-worked-companies', 'close');
+}
+function closePopupProjects() {
+  handlePopup('modal-projects', 'close');
 }
 
 
