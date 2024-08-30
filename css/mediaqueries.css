@@ -47,7 +47,8 @@
   }
   .modal-certificate,
   .modal-worked-companies,
-  .modal-projects {
+  .modal-projects,
+  .modal-expirience {
     top: 305px;
     left: 0;
     right: 0;
@@ -126,7 +127,8 @@
   }
   .modal-certificate,
   .modal-worked-companies,
-  .modal-projects {
+  .modal-projects,
+  .modal-expirience {
     top: 100px;
     left: 0;
     right: 0;
@@ -222,7 +224,8 @@
     }
     .modal-certificate, 
     .modal-worked-companies,
-    .modal-projects {
+    .modal-projects,
+    .modal-expirience {
       top: 100px;
       left: 0;
       right: 0;
@@ -315,7 +318,8 @@
   }
   .modal-certificate,
   .modal-worked-companies,
-  .modal-projects {
+  .modal-projects,
+  .modal-expirience {
     top: 210px;
     left: 0;
     right: 0;
