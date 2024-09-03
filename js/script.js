@@ -231,6 +231,16 @@ function  closePopupExpirience(){
  
   
 
+$(document).ready(function(){
+  $('.portfolio').click(function(){
+    var modalToShow = $(this).data('modal');
+    $('.' + modalToShow).css('display', 'flex');
+  });
+
+  $('.modal-certificate, .modal-worked-companies, .modal-projects, .modal-experience').click(function(){
+    $(this).css('display', 'none');
+  });
+});
 
 
 
