@@ -236,7 +236,7 @@ $(document).ready(function(){
     $('.' + modalToShow).css('display', 'flex');
   });
 
-  $('.modal-certificate, .modal-worked-companies, .modal-projects, .modal-experience').click(function(){
+  $('.modal-certificates, .modal-worked-companies, .modal-projects, .modal-experience').click(function(){
     $(this).css('display', 'none');
   });
 });
