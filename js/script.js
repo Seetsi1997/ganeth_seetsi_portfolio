@@ -230,7 +230,6 @@ function  closePopupExpirience(){
 }
  
   
-
 $(document).ready(function(){
   $('.portfolio').click(function(){
     var modalToShow = $(this).data('modal');
