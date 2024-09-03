@@ -213,7 +213,7 @@ function openPopupProjects() {
   handlePopup('modal-projects', 'open');
 }
 function openPopupExpirience() {
-  handlePopup('modal-expirience', 'open');
+  handlePopup('modal-experience', 'open');
 }
 // Functions to close popups
 function closePopupCertificates() {
@@ -226,7 +226,7 @@ function closePopupProjects() {
   handlePopup('modal-projects', 'close');
 }
 function  closePopupExpirience(){
-  handlePopup('modal-expirience', 'close');
+  handlePopup('modal-exxperience', 'close');
 }
  
   
