@@ -230,16 +230,16 @@ function  closePopupExpirience(){
 }
  
   
-$(document).ready(function(){
-  $('.portfolio').click(function(){
-    var modalToShow = $(this).data('modal');
-    $('.' + modalToShow).css('display', 'flex');
-  });
+//$(document).ready(function(){
+//  $('.portfolio').click(function(){
+ //   var modalToShow = $(this).data('modal');
+  //  $('.' + modalToShow).css('display', 'flex');
+//  });
 
-  $('.modal-certificates, .modal-worked-companies, .modal-projects, .modal-experience').click(function(){
-    $(this).css('display', 'none');
-  });
-});
+ // $('.modal-certificates, .modal-worked-companies, .modal-projects, .modal-experience').click(function(){
+    //$(this).css('display', 'none');
+//  });
+//});
 
 
 
