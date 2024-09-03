@@ -444,7 +444,7 @@ img {
 .modal-certificate,
 .modal-worked-companies,
 .modal-projects,
-.modal-expirience {
+.modal-experience {
   display: none; 
   position: fixed; 
   top: 0;
@@ -457,7 +457,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
-  z-index: 2;
+  z-index: 1000; /* Ensure this is higher than other elements */
   transition: 0.3s;
   cursor: pointer;
 }
