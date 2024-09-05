@@ -518,7 +518,7 @@ img {
 .modal-certificate .modal-certificates-content .services__modal-icon,
 .modal-worked-companies .modal-worked-content .services__modal-icon,
 .modal-projects .modal-projects-content .services__modal-icon,
-.modal-expirience .modal-experience-content .services__modal-icon{
+.modal-experience .modal-experience-content .services__modal-icon{
   color: var(--color-clr);
   font-size: 18px;
 }
