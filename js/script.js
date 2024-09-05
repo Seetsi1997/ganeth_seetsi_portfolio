@@ -226,7 +226,7 @@ function closePopupProjects() {
   handlePopup('modal-projects', 'close');
 }
 function  closePopupExpirience(){
-  handlePopup('modal-exxperience', 'close');
+  handlePopup('modal-experience', 'close');
 }
  
   
