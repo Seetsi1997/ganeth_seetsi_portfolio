@@ -45,14 +45,14 @@
     justify-self: center;
 
   }
-  .modal-certificate,
-  .modal-worked-companies,
-  .modal-projects,
-  .modal-expirience {
-    top: 305px;
+  .about__data .about__info .modal-certificate,
+  .about__data .about__info .modal-worked-companies,
+  .about__data .about__info .modal-projects,
+  .about__data .about__info .modal-expirience{
+    top: 100px;
     left: 0;
     right: 0;
-    bottom: 0; 
+    bottom: 0;
   }
 
   .skills__title {
@@ -125,10 +125,10 @@
     width: 150px;
 
   }
-  .modal-certificate,
-  .modal-worked-companies,
-  .modal-projects,
-  .modal-expirience {
+  .about__data .about__info .modal-certificate,
+  .about__data .about__info .modal-worked-companies,
+  .about__data .about__info .modal-projects,
+  .about__data .about__info .modal-expirience {
     top: 100px;
     left: 0;
     right: 0;
@@ -222,10 +222,10 @@
     .about__buttons {
       justify-content: initial;
     }
-    .modal-certificate, 
-    .modal-worked-companies,
-    .modal-projects,
-    .modal-expirience {
+    .about__data .about__info .modal-certificate,
+    .about__data .about__info .modal-worked-companies,
+    .about__data .about__info .modal-projects,
+    .about__data .about__info .modal-expirience {
       top: 100px;
       left: 0;
       right: 0;
@@ -316,10 +316,10 @@
   .home__social {
     transform: translateX(-6rem);
   }
-  .modal-certificate,
-  .modal-worked-companies,
-  .modal-projects,
-  .modal-expirience {
+  .about__data .about__info .modal-certificate,
+  .about__data .about__info .modal-worked-companies,
+  .about__data .about__info .modal-projects,
+  .about__data .about__info .modal-expirience{
     top: 210px;
     left: 0;
     right: 0;
