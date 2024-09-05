@@ -435,31 +435,40 @@ img {
   display: flex;
   justify-content: center;
 }
-.about__info .about__info__certificates .about__info-name, 
-.about__info .about__info__companies .about__info-name, 
-.about__info .about__info__projects .about__info-name,
-.about__info .about__info__expirience .about__info-name {
+.about__info .about__info-name, 
+.about__info .about__info-title {
+  color: var(--color-clr);
   cursor: pointer;
 }
-.modal-certificate,
-.modal-worked-companies,
-.modal-projects,
-.modal-experience {
-  display: none; 
-  position: fixed; 
+.about__data .about__info{
+  background: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  padding: 12px;
+}
+.about .about__data .about__info .modal-certificate,
+.about .about__data .about__info .modal-worked-companies,
+.about .about__data .about__info .modal-projects,
+.about .about__data .about__info .modal-expirience {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; 
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  z-index: 1000; /* Ensure this is higher than other elements */
-  transition: 0.3s;
-  cursor: pointer;
+  padding-top: 105px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: var(--z-modal);
+  transition: 0.3s;;
 }
 .modal-certificates-content,
 .modal-worked-content, 
@@ -483,10 +492,10 @@ img {
   margin-bottom: var(--mb-1-5);
   color: var(--text-color-light);
 }
-.modal-certificate .modal-certificates-content li, 
-.modal-worked-companies .modal-worked-content li,
-.modal-projects .modal-projects-content li,
-.modal-expirience .modal-expirience-content li{
+.modal-certificate .modal-certificates-content  ul li, 
+.modal-worked-companies .modal-worked-content  ul li,
+.modal-projects .modal-projects-content  ul li,
+.modal-expirience .modal-expirience-content  ul li{
   font-size: 13.5px;
   font-weight: 500;
   color: var(--color-clr);
@@ -890,7 +899,6 @@ img {
 /*==================== PROJECT IN MIND ====================*/
 .project {
   text-align: center;
- z-index: 1;
 }
 
 .project__bg {
@@ -916,7 +924,6 @@ img {
 .testimonial__data,
 .testimonial__header {
   display: flex;
- z-index: 1;
 }
 
 .testimonial__data {
