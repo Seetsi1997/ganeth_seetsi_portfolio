@@ -959,6 +959,40 @@ img {
 .swiper-container .swiper-pagination-testimonial {
   bottom: 0;
 }
+/*==================== MY LOCATION ====================*/
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh
+}
+
+.location__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.location__information {
+  text-align: center;
+  margin: 20px;
+}
+.location__information .location__subtitle iframe {
+  width: 500px;
+  height: 250px;
+  border-radius: 2em;
+  border: none;
+  opacity: 0.7;
+  transition: 0.5s  ease-in-out;
+}
+.location__information .location__subtitle iframe:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
