@@ -974,7 +974,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 100%; 
+  max-width: 1200px; 
 }
 
 .location__information {
@@ -982,7 +982,7 @@ img {
   margin: 20px;
 }
 .location__information .location__subtitle iframe {
-  width: 500px;
+  width: 800px;
   height: 250px;
   border-radius: 2em;
   border: none;
