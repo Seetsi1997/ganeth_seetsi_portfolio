@@ -984,8 +984,11 @@ img {
 }
 
 .location__information .location__subtitle iframe {
-  width: 800px; /* Default for larger screens */
-  height: 425px;
+  width: 95%;  
+  max-width: 1000px; 
+  height: 400px;
+  display: block; 
+  margin: 0 auto; 
   border-radius: 2em;
   border: none;
   opacity: 0.7;
