@@ -295,7 +295,7 @@
     }
 
    .location__information .location__subtitle iframe {
-      width: 100%; /* Full width for smaller screens */
+      width: 95%; /* Full width for smaller screens */
       height: 300px;
     }
     .footer__container {
@@ -373,7 +373,6 @@
 }
    .location__information .location__subtitle iframe {
     width: 90%;
-    max-width: 600px;
     height: 350px;
    }
   
