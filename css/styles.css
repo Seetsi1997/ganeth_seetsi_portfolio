@@ -966,7 +966,8 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 50vh
+  min-height: 50vh;
+  padding: 20px;
 }
 
 .location__container {
@@ -981,18 +982,21 @@ img {
   text-align: center;
   margin: 20px;
 }
+
 .location__information .location__subtitle iframe {
-  width: 800px;
+  width: 800px; /* Default for larger screens */
   height: 425px;
   border-radius: 2em;
   border: none;
   opacity: 0.7;
-  transition: 0.5s  ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.location__information .location__subtitle iframe:hover{
+
+.location__information .location__subtitle iframe:hover {
   transform: scale(1.1);
   opacity: 1;
 }
+
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
