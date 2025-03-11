@@ -976,6 +976,7 @@ img {
   align-items: center;
   width: 100%;
   max-width: 1200px; 
+  flex-wrap: wrap; /* Ensures content doesn't overflow on smaller screens */
 }
 
 .location__information {
@@ -984,22 +985,21 @@ img {
 }
 
 .location__information .location__subtitle iframe {
-  width: 95%;  
-  max-width: 1000px; 
+  width: 95%;
+  max-width: 1000px;
   height: 400px;
-  display: block; 
-  margin: 0 auto; 
+  display: block;
+  margin: 0 auto;
   border-radius: 2em;
   border: none;
-  opacity: 0.7;
-  transition: 0.5s ease-in-out;
+  opacity: 0.8; /* Slightly improved visibility */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .location__information .location__subtitle iframe:hover {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Slightly reduced scaling for better UX */
   opacity: 1;
 }
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
