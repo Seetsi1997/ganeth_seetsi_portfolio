@@ -371,9 +371,9 @@
 .footer .footer__bg .footer__container .footer__links i{
   display: none;
 }
-   .location__information .location__subtitle iframe {
+  .location__information .location__subtitle iframe {
     width: 90%;
-    height: 350px;
+    height: 50px;
    }
   
   .contact__form {
