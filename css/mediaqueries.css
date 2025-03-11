@@ -372,8 +372,8 @@
   display: none;
 }
   .location__information .location__subtitle iframe {
-    width: 90%;
-    height: 50px;
+    width: 100%;
+    height: 350px;
    }
   
   .contact__form {
