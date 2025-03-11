@@ -93,8 +93,9 @@
   .testimonial__description {
     text-align: center;
   }
-    .location__information .location__subtitle iframe {
-    width: 70%;
+   .location__information .location__subtitle iframe {
+    width: 100%;
+    max-width: 350px; 
     height: 250px;
   }
 }
@@ -144,8 +145,9 @@
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
-   .location__information .location__subtitle iframe {
+  .location__information .location__subtitle iframe {
     width: 100%;
+    max-width: 450px;
     height: 250px;
   }
 }
