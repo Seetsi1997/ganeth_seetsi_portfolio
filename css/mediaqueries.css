@@ -95,11 +95,16 @@
   }
    .location__information .location__subtitle iframe {
     width: 100%;
-    max-width: 350px; 
+    max-width: 480px; 
     height: 250px;
   }
 }
-
+/** @media screen and (max-width: 480px) {
+  .location__information .location__subtitle iframe {
+    width: 100%;
+    height: 250px;
+  }
+} */
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
