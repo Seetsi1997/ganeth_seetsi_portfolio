@@ -93,7 +93,10 @@
   .testimonial__description {
     text-align: center;
   }
-   
+    .location__information .location__subtitle iframe {
+    width: 70%;
+    height: 250px;
+  }
 }
 
 /* For medium devices */
