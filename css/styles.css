@@ -657,6 +657,24 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
+@keyframes fadeToRed {
+  0% {
+    color: #000; 
+  }
+  50% {
+    color: #ff0000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.section__title {
+  font-size: 1.25rem; /* Example size */
+  text-align: center; /* Center the title */
+  animation: fadeToRed 2s infinite; /* Apply the animation */
+}
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
