@@ -161,7 +161,7 @@ img {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-2);
-  animation: fadeToRed 5s infinite;
+  animation: fadeToRed 12s infinite;
 }
 
 .section__title,
