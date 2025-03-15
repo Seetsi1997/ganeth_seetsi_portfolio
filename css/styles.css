@@ -295,12 +295,24 @@ img {
     transform: translateY(-10px);
   }
 }
+
+@keyframes slomoshine {
+  0% {
+    text-shadow: 0 0 5px var(--first-color), 0 0 10px var(--first-color), 0 0 20px var(--first-color);
+  }
+  50% {
+    text-shadow: 0 0 15px var(--first-color-alt), 0 0 30px var(--first-color-alt), 0 0 45px var(--first-color-alt);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--first-color), 0 0 10px var(--first-color), 0 0 20px var(--first-color);
+  }
+}
+
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--text-color);
-  animation: bounce 12s infinite;
+  animation: bounce 12s infinite, slomoshine 5s infinite;
 }
-
 .home__social-icon:hover {
   color: var(--first-color-alt);
 }
