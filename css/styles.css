@@ -298,7 +298,7 @@ img {
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--text-color);
-  animation: bounce 2s infinite;
+  animation: bounce 12s infinite;
 }
 
 .home__social-icon:hover {
